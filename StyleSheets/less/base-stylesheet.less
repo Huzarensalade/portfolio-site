@@ -1,0 +1,31 @@
+//offset values
+@menu-width: 250px;
+
+//color & styling values
+@dark-background: #1c212a;
+@dark-text: ;
+@light-background: #232a34;
+@light-text: #505865;
+@highlighted-background: #f4ad24;
+@highlighted-text: ;
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+
+.menu {
+    width: @menu-width;
+    background-color: @light-background;
+    min-height: 100%;
+    position: absolute;
+}
+
+.content {
+    width: calc(100% - @menu-width);
+    margin: 0 0 0 @menu-width;
+    background-color: dark-background;
+}
